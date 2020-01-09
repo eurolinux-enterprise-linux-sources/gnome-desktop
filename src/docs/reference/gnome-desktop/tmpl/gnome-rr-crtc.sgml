@@ -1,0 +1,119 @@
+<!-- ##### SECTION Title ##### -->
+gnome-rr-crtc
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### TYPEDEF GnomeRRCrtc ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ENUM GnomeRRRotation ##### -->
+<para>
+
+</para>
+
+@GNOME_RR_ROTATION_0: 
+@GNOME_RR_ROTATION_90: 
+@GNOME_RR_ROTATION_180: 
+@GNOME_RR_ROTATION_270: 
+@GNOME_RR_REFLECT_X: 
+@GNOME_RR_REFLECT_Y: 
+
+<!-- ##### FUNCTION gnome_rr_crtc_get_id ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_set_config ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@x: 
+@y: 
+@mode: 
+@rotation: 
+@outputs: 
+@n_outputs: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_can_drive_output ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@output: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_get_current_mode ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_get_position ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@x: 
+@y: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_supports_rotation ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@rotation: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_get_current_rotation ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_rr_crtc_get_rotations ##### -->
+<para>
+
+</para>
+
+@crtc: 
+@Returns: 
+
+

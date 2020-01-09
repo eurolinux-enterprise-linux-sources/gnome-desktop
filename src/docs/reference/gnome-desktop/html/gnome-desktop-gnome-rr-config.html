@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gnome-rr-config</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<link rel="home" href="index.html" title="GNOME Desktop Library Reference Manual">
+<link rel="up" href="randr.html" title="Part III. Monitor Configuration">
+<link rel="prev" href="gnome-desktop-gnome-rr-mode.html" title="gnome-rr-mode">
+<link rel="next" href="GnomeRRLabeler.html" title="GnomeRRLabeler">
+<meta name="generator" content="GTK-Doc V1.12 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="part" href="intro.html" title="Part I. GNOME Desktop Library Overview">
+<link rel="part" href="background.html" title="Part II. Desktop Background">
+<link rel="part" href="randr.html" title="Part III. Monitor Configuration">
+<link rel="part" href="thumbnail.html" title="Part IV. Thumbnails">
+<link rel="part" href="libgnome.html" title="Part V. Miscellaneous">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="gnome-desktop-gnome-rr-mode.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="randr.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">GNOME Desktop Library Reference Manual</th>
+<td><a accesskey="n" href="GnomeRRLabeler.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#gnome-desktop-gnome-rr-config.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#gnome-desktop-gnome-rr-config.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry" title="gnome-rr-config">
+<a name="gnome-desktop-gnome-rr-config"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-desktop-gnome-rr-config.top_of_page"></a>gnome-rr-config</span></h2>
+<p>gnome-rr-config</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="gnome-desktop-gnome-rr-config.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;libgnomeui/gnome-rr-config.h&gt;
+
+typedef             <a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeOutputInfo" title="GnomeOutputInfo">GnomeOutputInfo</a>;
+typedef             <a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig">GnomeRRConfig</a>;
+<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *     <a class="link" href="gnome-desktop-gnome-rr-config.html#gnome-rr-config-new-current" title="gnome_rr_config_new_current ()">gnome_rr_config_new_current</a>         (<a class="link" href="gnome-desktop-gnome-rr-screen.html#GnomeRRScreen" title="GnomeRRScreen"><span class="returnvalue">GnomeRRScreen</span></a> *screen);
+<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *     <a class="link" href="gnome-desktop-gnome-rr-config.html#gnome-rr-config-new-stored" title="gnome_rr_config_new_stored ()">gnome_rr_config_new_stored</a>          (<a class="link" href="gnome-desktop-gnome-rr-screen.html#GnomeRRScreen" title="GnomeRRScreen"><span class="returnvalue">GnomeRRScreen</span></a> *screen,
+                                                         <span class="returnvalue">GError</span> **error);
+<span class="returnvalue">void</span>                <a class="link" href="gnome-desktop-gnome-rr-config.html#gnome-rr-config-free" title="gnome_rr_config_free ()">gnome_rr_config_free</a>                (<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *configuration);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop-gnome-rr-config.html#gnome-rr-config-match" title="gnome_rr_config_match ()">gnome_rr_config_match</a>               (<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *config1,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *config2);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop-gnome-rr-config.html#gnome-rr-config-equal" title="gnome_rr_config_equal ()">gnome_rr_config_equal</a>               (<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *config1,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *config2);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop-gnome-rr-config.html#gnome-rr-config-save" title="gnome_rr_config_save ()">gnome_rr_config_save</a>                (<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *configuration,
+                                                         <span class="returnvalue">GError</span> **error);
+<span class="returnvalue">void</span>                <a class="link" href="gnome-desktop-gnome-rr-config.html#gnome-rr-config-sanitize" title="gnome_rr_config_sanitize ()">gnome_rr_config_sanitize</a>            (<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *configuration);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop-gnome-rr-config.html#gnome-rr-config-apply" title="gnome_rr_config_apply ()">gnome_rr_config_apply</a>               (<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *configuration,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-screen.html#GnomeRRScreen" title="GnomeRRScreen"><span class="returnvalue">GnomeRRScreen</span></a> *screen,
+                                                         <span class="returnvalue">GError</span> **error);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop-gnome-rr-config.html#gnome-rr-config-apply-stored" title="gnome_rr_config_apply_stored ()">gnome_rr_config_apply_stored</a>        (<a class="link" href="gnome-desktop-gnome-rr-screen.html#GnomeRRScreen" title="GnomeRRScreen"><span class="returnvalue">GnomeRRScreen</span></a> *screen,
+                                                         <span class="returnvalue">GError</span> **error);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop-gnome-rr-config.html#gnome-rr-config-applicable" title="gnome_rr_config_applicable ()">gnome_rr_config_applicable</a>          (<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *configuration,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-screen.html#GnomeRRScreen" title="GnomeRRScreen"><span class="returnvalue">GnomeRRScreen</span></a> *screen,
+                                                         <span class="returnvalue">GError</span> **error);
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="gnome-desktop-gnome-rr-config.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="gnome-desktop-gnome-rr-config.details"></a><h2>Details</h2>
+<div class="refsect2" title="GnomeOutputInfo">
+<a name="GnomeOutputInfo"></a><h3>GnomeOutputInfo</h3>
+<pre class="programlisting">typedef struct GnomeOutputInfo GnomeOutputInfo;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="GnomeRRConfig">
+<a name="GnomeRRConfig"></a><h3>GnomeRRConfig</h3>
+<pre class="programlisting">typedef struct GnomeRRConfig GnomeRRConfig;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_config_new_current ()">
+<a name="gnome-rr-config-new-current"></a><h3>gnome_rr_config_new_current ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *     gnome_rr_config_new_current         (<a class="link" href="gnome-desktop-gnome-rr-screen.html#GnomeRRScreen" title="GnomeRRScreen"><span class="returnvalue">GnomeRRScreen</span></a> *screen);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>screen</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_config_new_stored ()">
+<a name="gnome-rr-config-new-stored"></a><h3>gnome_rr_config_new_stored ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *     gnome_rr_config_new_stored          (<a class="link" href="gnome-desktop-gnome-rr-screen.html#GnomeRRScreen" title="GnomeRRScreen"><span class="returnvalue">GnomeRRScreen</span></a> *screen,
+                                                         <span class="returnvalue">GError</span> **error);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>screen</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_config_free ()">
+<a name="gnome-rr-config-free"></a><h3>gnome_rr_config_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                gnome_rr_config_free                (<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *configuration);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>configuration</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_config_match ()">
+<a name="gnome-rr-config-match"></a><h3>gnome_rr_config_match ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_config_match               (<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *config1,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *config2);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>config1</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>config2</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_config_equal ()">
+<a name="gnome-rr-config-equal"></a><h3>gnome_rr_config_equal ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_config_equal               (<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *config1,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *config2);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>config1</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>config2</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_config_save ()">
+<a name="gnome-rr-config-save"></a><h3>gnome_rr_config_save ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_config_save                (<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *configuration,
+                                                         <span class="returnvalue">GError</span> **error);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>configuration</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_config_sanitize ()">
+<a name="gnome-rr-config-sanitize"></a><h3>gnome_rr_config_sanitize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                gnome_rr_config_sanitize            (<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *configuration);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>configuration</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_config_apply ()">
+<a name="gnome-rr-config-apply"></a><h3>gnome_rr_config_apply ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_config_apply               (<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *configuration,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-screen.html#GnomeRRScreen" title="GnomeRRScreen"><span class="returnvalue">GnomeRRScreen</span></a> *screen,
+                                                         <span class="returnvalue">GError</span> **error);</pre>
+<div class="warning" title="Warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">gnome_rr_config_apply</code> is deprecated and should not be used in newly-written code.</p>
+</div>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>configuration</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>screen</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_config_apply_stored ()">
+<a name="gnome-rr-config-apply-stored"></a><h3>gnome_rr_config_apply_stored ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_config_apply_stored        (<a class="link" href="gnome-desktop-gnome-rr-screen.html#GnomeRRScreen" title="GnomeRRScreen"><span class="returnvalue">GnomeRRScreen</span></a> *screen,
+                                                         <span class="returnvalue">GError</span> **error);</pre>
+<div class="warning" title="Warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">gnome_rr_config_apply_stored</code> is deprecated and should not be used in newly-written code.</p>
+</div>
+<p>
+See the documentation for <code class="function">gnome_rr_config_apply_from_filename()</code>.  This
+function simply calls that other function with a filename of
+<code class="function">gnome_rr_config_get_intended_filename()</code>.
+</p>
+<p>
+<em class="parameter"><code>Deprecated</code></em>: 2.26: Use <code class="function">gnome_rr_config_apply_from_filename()</code> instead and pass it
+the filename from <code class="function">gnome_rr_config_get_intended_filename()</code>.</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>screen</code></em> :</span></p></td>
+<td> A <a class="link" href="gnome-desktop-gnome-rr-screen.html#GnomeRRScreen" title="GnomeRRScreen"><span class="type">GnomeRRScreen</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td> Location to store error, or <a href="/gnome/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_config_applicable ()">
+<a name="gnome-rr-config-applicable"></a><h3>gnome_rr_config_applicable ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_config_applicable          (<a class="link" href="gnome-desktop-gnome-rr-config.html#GnomeRRConfig" title="GnomeRRConfig"><span class="returnvalue">GnomeRRConfig</span></a> *configuration,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-screen.html#GnomeRRScreen" title="GnomeRRScreen"><span class="returnvalue">GnomeRRScreen</span></a> *screen,
+                                                         <span class="returnvalue">GError</span> **error);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>configuration</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>screen</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.12</div>
+</body>
+</html>

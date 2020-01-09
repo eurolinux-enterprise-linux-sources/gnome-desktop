@@ -1,0 +1,288 @@
+# translation of lv.po to Latvian
+# Latvian translation for Gnome Desktop.
+# Copyright © 2006 Gnome i18n Project for Latvian.
+# Copyright (C) 2000, 2006, 2007, 2009 Free Software Foundation, Inc.
+#
+# P�eris Krij�is <peterisk@apollo.lv>, 2000.
+# Artis Trops <hornet@navigators.lv>, 2000.
+# Raivis Dejus <orvils@gmail.com>, 2006, 2007, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: lv\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-desktop&amp;component=general\n"
+"POT-Creation-Date: 2008-12-09 18:19+0000\n"
+"PO-Revision-Date: 2009-01-25 13:43+0200\n"
+"Last-Translator: Raivis Dejus <orvils@gmail.com>\n"
+"Language-Team: Latvian <locale@laka.lv>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:1
+#: ../gnome-about/gnome-about.in:61
+msgid "About GNOME"
+msgstr "Par GNOME"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:2
+msgid "Learn more about GNOME"
+msgstr "Uzziniet vairāk par GNOME"
+
+#: ../gnome-about/gnome-about.in:62
+msgid "News"
+msgstr "Ziņas"
+
+#: ../gnome-about/gnome-about.in:63
+msgid "GNOME Library"
+msgstr "GNOME bibliotēka"
+
+#: ../gnome-about/gnome-about.in:64
+msgid "Friends of GNOME"
+msgstr "GNOME draugi"
+
+#: ../gnome-about/gnome-about.in:65
+msgid "Contact"
+msgstr "Kontakti"
+
+#: ../gnome-about/gnome-about.in:69
+msgid "The Mysterious GEGL"
+msgstr "Mistiskais GEGL"
+
+#: ../gnome-about/gnome-about.in:70
+msgid "The Squeaky Rubber GNOME"
+msgstr "Pīkstošā gumijas GNOME"
+
+#: ../gnome-about/gnome-about.in:71
+msgid "Wanda The GNOME Fish"
+msgstr "GNOME zivtiņa Vanda"
+
+#: ../gnome-about/gnome-about.in:568
+msgid "_Open URL"
+msgstr "_Atvērt URL"
+
+#: ../gnome-about/gnome-about.in:575
+msgid "_Copy URL"
+msgstr "_Kopēt URL"
+
+#: ../gnome-about/gnome-about.in:830
+msgid "About the GNOME Desktop"
+msgstr "Par GNOME darbvidi"
+
+#: ../gnome-about/gnome-about.in:866
+msgid "%(name)s: %(value)s"
+msgstr "%(name)s: %(value)s"
+
+#: ../gnome-about/gnome-about.in:880
+msgid "Welcome to the GNOME Desktop"
+msgstr "Laipni lūgti GNOME vidē"
+
+#: ../gnome-about/gnome-about.in:897
+msgid "Brought to you by:"
+msgstr "Veidotāji:"
+
+#: ../gnome-about/gnome-about.in:921
+msgid "<b>%(name)s:</b> %(value)s"
+msgstr "<b>%(name)s:</b> %(value)s"
+
+#: ../gnome-about/gnome-about.in:977
+msgid "Version"
+msgstr "Versija"
+
+#: ../gnome-about/gnome-about.in:978
+msgid "Distributor"
+msgstr "Izplatītājs"
+
+#: ../gnome-about/gnome-about.in:979
+msgid "Build Date"
+msgstr "Būvējuma datums"
+
+#: ../gnome-about/gnome-about.in:1023
+msgid "Display information on this GNOME version"
+msgstr "Informācija par šo GNOME versiju"
+
+#: ../gnome-version.xml.in.in.h:1
+msgid ""
+"GNOME also includes a complete development platform for applications "
+"programmers, allowing the creation of powerful and complex applications."
+msgstr ""
+"GNOME sevī iekļauj arī pilnvērtīgu programmatūras izstrādes platformu, kas "
+"ļauj veidot dažādas daudzfunkcionālas un sarežģītas programmas."
+
+#: ../gnome-version.xml.in.in.h:2
+msgid ""
+"GNOME includes most of what you see on your computer, including the file "
+"manager, web browser, menus, and many applications."
+msgstr ""
+"GNOME sevī iekļauj lielāko daļu no tā, ko jūs redzat uz datora, ieskaitot "
+"failu pārvaldnieku, tīkla pārlūku, izvēlnes un daudzas programmas."
+
+#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
+#. will be substituted by the configure script. Otherwise you will break
+#. the translations.
+#: ../gnome-version.xml.in.in.h:6
+msgid ""
+"GNOME is a Free, usable, stable, accessible desktop environment for the Unix-"
+"like family of operating systems."
+msgstr ""
+"GNOME ir brīva, lietojama, stabila un visiem pieejama darba vide UNIX tipa "
+"operētājsistēmām."
+
+#: ../gnome-version.xml.in.in.h:7
+msgid ""
+"GNOME's focus on usability and accessibility, regular release cycle, and "
+"strong corporate backing make it unique among Free Software desktops."
+msgstr ""
+"GNOMEs fokusēšanās uz lietojamību un pieejamību, regulārs jaunu versiju "
+"prezentēšanas cikls un spēcīgi korporatīvie sakari padara to unikālu starp "
+"Brīvās Programmatūras darbvidēm."
+
+#: ../gnome-version.xml.in.in.h:8
+msgid ""
+"GNOME's greatest strength is our strong community. Virtually anyone, with or "
+"without coding skills, can contribute to making GNOME better."
+msgstr ""
+"GNOME lielākais spēks slēpjas kopienā. Praktiski, jebkurš, ar vai bez "
+"programmēšanas iemaņām, var līdzdarboties, lai padarītu GNOME labāku."
+
+#: ../gnome-version.xml.in.in.h:9
+msgid ""
+"Hundreds of people have contributed code to GNOME since it was started in "
+"1997; many more have contributed in other important ways, including "
+"translations, documentation, and quality assurance."
+msgstr ""
+"Simtiem cilvēku ir dalījušies ar savu izstrādes kodu, jau no pašiem GNOME "
+"sākumiem kopš 1997. gada; vēl vairāk cilvēku ir palīdzējuši citos nozīmīgos "
+"veidos, kā tulkošana, dokumentācijas rakstīšana, un kvalitātes pārbaude."
+
+#: ../libgnome-desktop/display-name.c:213
+msgid "Laptop"
+msgstr "Klēpjdators"
+
+#: ../libgnome-desktop/display-name.c:221
+msgid "Unknown"
+msgstr "Nezināms"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:218
+#, c-format
+msgid "Error reading file '%s': %s"
+msgstr "Kļūda lasot failu '%s': %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:286
+#, c-format
+msgid "Error rewinding file '%s': %s"
+msgstr "Kļūda atgriežot failu '%s': %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:388
+#: ../libgnome-desktop/gnome-desktop-item.c:3530
+msgid "No name"
+msgstr "Bez nosaukuma"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:615
+#, c-format
+msgid "File '%s' is not a regular file or directory."
+msgstr "Fails '%s' nav parasts fails vai direktorija."
+
+#: ../libgnome-desktop/gnome-desktop-item.c:799
+#, c-format
+msgid "Error cannot find file id '%s'"
+msgstr "Kļūda, nevaru atrast faila id '%s'"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:845
+#, c-format
+msgid "No filename to save to"
+msgstr "Nav faila nosaukuma, uz kuru saglabāt"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:1830
+#, c-format
+msgid "Starting %s"
+msgstr "Sāknēju %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2066
+#, c-format
+msgid "No URL to launch"
+msgstr "Nav URL, kuru palaist"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2082
+#, c-format
+msgid "Not a launchable item"
+msgstr "Nav palaižamas vienības"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2092
+#, c-format
+msgid "No command (Exec) to launch"
+msgstr "Nav komandas (Exec), ko palaist"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2105
+#, c-format
+msgid "Bad command (Exec) to launch"
+msgstr "Slikta komanda (Exec), ko palaist"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:3586
+#, c-format
+msgid "Unknown encoding of: %s"
+msgstr "Nezināms kodējums: %s"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:130
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr "Nevar atrast termināli, izmanto xterm, neskatoties uz to, ka tas varētu nestrādāt"
+
+#: ../libgnome-desktop/gnome-rr.c:346
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "nevar iegūt ekrāna izmēru diapazonu"
+
+#: ../libgnome-desktop/gnome-rr.c:355
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "neapstrādāta X kļūda iegūstot ekrāna izmēru diapazonu"
+
+#: ../libgnome-desktop/gnome-rr.c:444
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "nevar iegūt ekrāna resursus (CRTC, izvadus, režīmus)"
+
+#: ../libgnome-desktop/gnome-rr.c:579
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "RANDR paplašinājums nav pieejams"
+
+#: ../libgnome-desktop/gnome-rr.c:809
+#, c-format
+msgid "could not get information about output %d"
+msgstr "nevar atrast informāciju par izvadu %d"
+
+#: ../libgnome-desktop/gnome-rr.c:1107
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position=(%"
+"d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr "pieprasītā CRTC %d pozīcija/izmērs ir ārpus pieļaujamajiem limitiem: pozīcija=(%d, %d), izmērs=(%d, %d), maksimums=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:1140
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "nevar uzstādīt CRTC %d konfigurāciju"
+
+#: ../libgnome-desktop/gnome-rr.c:1249
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "nevar atrast informāciju par CRTC %d"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1152
+#, c-format
+msgid "none of the saved display configurations matched the active configuration"
+msgstr "neviena no saglabātajām ekrāna konfigurācijām neatbilst aktīvajai konfigurācijai"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1550
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr "pieprasītais virtuālais izmērs neatbilst pieejamajiem izmēriem: pieprasīts=(%d, %d), minimums=(%d, %d), maksimums=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1564
+#, c-format
+msgid "could not find a suitable configuration of screens"
+msgstr "nevar atrast piemērotu ekrānu konfigurāciju"
+

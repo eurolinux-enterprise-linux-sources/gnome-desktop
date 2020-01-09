@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Miscellaneous Functions</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<link rel="home" href="index.html" title="GNOME Desktop Library Reference Manual">
+<link rel="up" href="libgnome.html" title="Part V. Miscellaneous">
+<link rel="prev" href="gnome-desktop-GnomeDesktopItem.html" title="GnomeDesktopItem">
+<meta name="generator" content="GTK-Doc V1.12 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="part" href="intro.html" title="Part I. GNOME Desktop Library Overview">
+<link rel="part" href="background.html" title="Part II. Desktop Background">
+<link rel="part" href="randr.html" title="Part III. Monitor Configuration">
+<link rel="part" href="thumbnail.html" title="Part IV. Thumbnails">
+<link rel="part" href="libgnome.html" title="Part V. Miscellaneous">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="gnome-desktop-GnomeDesktopItem.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="libgnome.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">GNOME Desktop Library Reference Manual</th>
+<td> </td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#gnome-desktop-Miscellaneous-Functions.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#gnome-desktop-Miscellaneous-Functions.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry" title="Miscellaneous Functions">
+<a name="gnome-desktop-Miscellaneous-Functions"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-desktop-Miscellaneous-Functions.top_of_page"></a>Miscellaneous Functions</span></h2>
+<p>Miscellaneous Functions</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="gnome-desktop-Miscellaneous-Functions.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;libgnome/gnome-desktop-utils.h&gt;
+
+<span class="returnvalue">void</span>                <a class="link" href="gnome-desktop-Miscellaneous-Functions.html#gnome-desktop-prepend-terminal-to-vector" title="gnome_desktop_prepend_terminal_to_vector ()">gnome_desktop_prepend_terminal_to_vector</a>
+                                                        (<span class="returnvalue">int</span> *argc,
+                                                         <span class="returnvalue">char</span> ***argv);
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="gnome-desktop-Miscellaneous-Functions.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="gnome-desktop-Miscellaneous-Functions.details"></a><h2>Details</h2>
+<div class="refsect2" title="gnome_desktop_prepend_terminal_to_vector ()">
+<a name="gnome-desktop-prepend-terminal-to-vector"></a><h3>gnome_desktop_prepend_terminal_to_vector ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                gnome_desktop_prepend_terminal_to_vector
+                                                        (<span class="returnvalue">int</span> *argc,
+                                                         <span class="returnvalue">char</span> ***argv);</pre>
+<p>
+Prepends a terminal (either the one configured as default in
+the user's GNOME setup, or one of the common xterm emulators) to the passed
+in vector, modifying it in the process.  The vector should be allocated with
+<span class="type">g_malloc</span>, as this will <span class="type">g_free</span> the original vector.  Also all elements must
+have been allocated separately.  That is the standard glib/GNOME way of
+doing vectors however.  If the integer that <em class="parameter"><code>argc</code></em> points to is negative, the
+size will first be computed.  Also note that passing in pointers to a vector
+that is empty, will just create a new vector for you.</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>argc</code></em> :</span></p></td>
+<td> a pointer to the vector size
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>argv</code></em> :</span></p></td>
+<td> a pointer to the vector
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.12</div>
+</body>
+</html>

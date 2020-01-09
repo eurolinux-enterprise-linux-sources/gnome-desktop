@@ -1,0 +1,527 @@
+# Serbian translation of gnome-desktop
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2003, 2004, 2005, 2006, 2007.
+#
+# This file is distributed under the same license as the gnome-desktop package.
+#
+# Maintainer: Данило Шеган <dsegan@gmx.net>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-desktop\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"desktop&component=general\n"
+"POT-Creation-Date: 2009-08-19 19:24+0000\n"
+"PO-Revision-Date: 2008-09-20 03:26+0100\n"
+"Last-Translator: Горан Ракић <grakic@devbase.net>\n"
+"Language-Team: Serbian (sr) <gnom@prevod.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:1
+#: ../gnome-about/gnome-about.in:60
+msgid "About GNOME"
+msgstr "О Гному"
+
+#: ../gnome-about/gnome-about.desktop.in.in.h:2
+msgid "Learn more about GNOME"
+msgstr "Сазнајте више о Гному"
+
+#: ../gnome-about/gnome-about.in:61
+msgid "News"
+msgstr "Вести"
+
+#: ../gnome-about/gnome-about.in:62
+msgid "GNOME Library"
+msgstr "Библиотека Гнома"
+
+#: ../gnome-about/gnome-about.in:63
+msgid "Friends of GNOME"
+msgstr "Пријатељи Гнома"
+
+#: ../gnome-about/gnome-about.in:64
+msgid "Contact"
+msgstr "Контакт"
+
+#: ../gnome-about/gnome-about.in:68
+msgid "The Mysterious GEGL"
+msgstr "Мистериозни ГЕГЛ"
+
+#: ../gnome-about/gnome-about.in:69
+msgid "The Squeaky Rubber GNOME"
+msgstr "Крештећи гумени Gnome"
+
+#: ../gnome-about/gnome-about.in:70
+msgid "Wanda The GNOME Fish"
+msgstr "Гном риба звана Ванда"
+
+#: ../gnome-about/gnome-about.in:567
+msgid "_Open URL"
+msgstr "_Отвори УРЛ"
+
+#: ../gnome-about/gnome-about.in:574
+msgid "_Copy URL"
+msgstr "_Умножи УРЛ"
+
+#: ../gnome-about/gnome-about.in:826
+msgid "About the GNOME Desktop"
+msgstr "О радном окружењу Гном"
+
+#: ../gnome-about/gnome-about.in:859
+msgid "%(name)s: %(value)s"
+msgstr "%(name)s: %(value)s"
+
+#: ../gnome-about/gnome-about.in:873
+msgid "Welcome to the GNOME Desktop"
+msgstr "Добродошли на Гномову радну површину"
+
+#: ../gnome-about/gnome-about.in:890
+msgid "Brought to you by:"
+msgstr "Омогућили су вам:"
+
+#: ../gnome-about/gnome-about.in:914
+msgid "<b>%(name)s:</b> %(value)s"
+msgstr "<b>%(name)s:</b> %(value)s"
+
+#: ../gnome-about/gnome-about.in:975
+msgid "Version"
+msgstr "Издање"
+
+#: ../gnome-about/gnome-about.in:977
+msgid "Distributor"
+msgstr "Добављач"
+
+#: ../gnome-about/gnome-about.in:979
+msgid "Build Date"
+msgstr "Датум припреме"
+
+#: ../gnome-about/gnome-about.in:1024
+msgid "Display information on this GNOME version"
+msgstr "Прикажи информације о овом издању Гнома"
+
+#: ../gnome-version.xml.in.in.h:1
+msgid ""
+"GNOME also includes a complete development platform for applications "
+"programmers, allowing the creation of powerful and complex applications."
+msgstr ""
+"Гном такође садржи и развојну платформу која омогућава програмерима да праве "
+"нове сложене и моћне програме."
+
+#: ../gnome-version.xml.in.in.h:2
+msgid ""
+"GNOME includes most of what you see on your computer, including the file "
+"manager, web browser, menus, and many applications."
+msgstr ""
+"Гном садржи већину онога што видите на вашем рачунару, укључујући и "
+"управљача датотекама, читач веба, меније, и многе програме."
+
+#. NOTE TO AUTHORS: Do not put anything in the following paragraphs that
+#. will be substituted by the configure script. Otherwise you will break
+#. the translations.
+#: ../gnome-version.xml.in.in.h:6
+msgid ""
+"GNOME is a Free, usable, stable, accessible desktop environment for the Unix-"
+"like family of operating systems."
+msgstr ""
+"Гном је слободно, употребљиво, моћно и приступачно радно окружење за "
+"оперативне системе налик Униксу."
+
+#: ../gnome-version.xml.in.in.h:7
+msgid ""
+"GNOME's focus on usability and accessibility, regular release cycle, and "
+"strong corporate backing make it unique among Free Software desktops."
+msgstr ""
+"Гномове тежње ка употребљивости и приступачности, редовном поступку издавања "
+"и снажна подршка предузећа га издвајају међу радним окружењима слободног "
+"софтвера."
+
+#: ../gnome-version.xml.in.in.h:8
+msgid ""
+"GNOME's greatest strength is our strong community. Virtually anyone, with or "
+"without coding skills, can contribute to making GNOME better."
+msgstr ""
+"Највећа снага Гнома је наша чврста заједница. Готово свако, са или без "
+"програмерских способности, може допринети да Гном буде још бољи."
+
+#: ../gnome-version.xml.in.in.h:9
+msgid ""
+"Hundreds of people have contributed code to GNOME since it was started in "
+"1997; many more have contributed in other important ways, including "
+"translations, documentation, and quality assurance."
+msgstr ""
+"Стотине људи су написали понешто кода за Гном од његовог зачећа 1997. "
+"године; многи су допринели и на друге значајне начине, као што су преводи, "
+"документација, и контрола квалитета."
+
+#: ../libgnome-desktop/display-name.c:262
+msgid "Laptop"
+msgstr "Лаптоп"
+
+#: ../libgnome-desktop/display-name.c:270
+msgid "Unknown"
+msgstr "Непознато"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:220
+#, c-format
+msgid "Error reading file '%s': %s"
+msgstr "Грешка при читању датотеке „%s“: %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:288
+#, c-format
+msgid "Error rewinding file '%s': %s"
+msgstr "Грешка при премотавању датотеке „%s“: %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:377
+#: ../libgnome-desktop/gnome-desktop-item.c:3519
+msgid "No name"
+msgstr "Без имена"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:604
+#, c-format
+msgid "File '%s' is not a regular file or directory."
+msgstr "Датотека „%s“ није обична датотека или директоријум."
+
+# bug: w00t?
+#: ../libgnome-desktop/gnome-desktop-item.c:788
+#, c-format
+msgid "Error cannot find file id '%s'"
+msgstr "Грешка: не може да нађе датотеку са ИБ-ом „%s“"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:834
+#, c-format
+msgid "No filename to save to"
+msgstr "Име датотеке није дато"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:1819
+#, c-format
+msgid "Starting %s"
+msgstr "Покрећем %s"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2055
+#, c-format
+msgid "No URL to launch"
+msgstr "Нема адресе за покретање"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2071
+#, c-format
+msgid "Not a launchable item"
+msgstr "Није могуће покренути"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2081
+#, c-format
+msgid "No command (Exec) to launch"
+msgstr "Нема наредбе (Exec) за покретање"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:2094
+#, c-format
+msgid "Bad command (Exec) to launch"
+msgstr "Лоша наредба (Exec) за покретање"
+
+#: ../libgnome-desktop/gnome-desktop-item.c:3575
+#, c-format
+msgid "Unknown encoding of: %s"
+msgstr "Непознато кодирање за: %s"
+
+#: ../libgnome-desktop/gnome-desktop-utils.c:133
+msgid "Cannot find a terminal, using xterm, even if it may not work"
+msgstr "Не могу да нађем терминал, користим xterm чак и уколико не ради"
+
+#: ../libgnome-desktop/gnome-rr.c:405
+#, c-format
+msgid "could not get the screen resources (CRTCs, outputs, modes)"
+msgstr "не могу да добијем ресурсе за екран (CRTC-и, излази, модови)"
+
+#: ../libgnome-desktop/gnome-rr.c:425
+#, c-format
+msgid "unhandled X error while getting the range of screen sizes"
+msgstr "неутврђена грешка у X серверу при добијању опсега величина за екран"
+
+#: ../libgnome-desktop/gnome-rr.c:431
+#, c-format
+msgid "could not get the range of screen sizes"
+msgstr "не могу да добијем опсег величина за екран"
+
+#: ../libgnome-desktop/gnome-rr.c:657
+#, c-format
+msgid "RANDR extension is not present"
+msgstr "Није присутно RANDR проширење"
+
+#: ../libgnome-desktop/gnome-rr.c:923
+#, c-format
+msgid "could not get information about output %d"
+msgstr "не могу да добијем податке о излазу %d"
+
+#. Translators: the "position", "size", and "maximum"
+#. * words here are not keywords; please translate them
+#. * as usual.  A CRTC is a CRT Controller (this is X terminology)
+#: ../libgnome-desktop/gnome-rr.c:1261
+#, c-format
+msgid ""
+"requested position/size for CRTC %d is outside the allowed limit: position=(%"
+"d, %d), size=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"захтеван положај/величина за CRTC %d је изван дозвољеног ограничења: положај="
+"(%d, %d), величина=(%d, %d), највише=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr.c:1297
+#, c-format
+msgid "could not set the configuration for CRTC %d"
+msgstr "не могу да пставим подешавања за CRTC %d екран"
+
+#: ../libgnome-desktop/gnome-rr.c:1409
+#, c-format
+msgid "could not get information about CRTC %d"
+msgstr "не могу да добијем податке о CRTC %d екрану"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1159
+#, c-format
+msgid ""
+"none of the saved display configurations matched the active configuration"
+msgstr ""
+"ни једно од сачуваних подешавања екрана се не поклапа са текућим подешавањем"
+
+#. Translators: the "requested", "minimum", and
+#. * "maximum" words here are not keywords; please
+#. * translate them as usual.
+#: ../libgnome-desktop/gnome-rr-config.c:1682
+#, c-format
+msgid ""
+"required virtual size does not fit available size: requested=(%d, %d), "
+"minimum=(%d, %d), maximum=(%d, %d)"
+msgstr ""
+"захтевана виртуелна величина је изван доступне: захтевана=(%d, %d), најмања="
+"(%d, %d), највећа=(%d, %d)"
+
+#: ../libgnome-desktop/gnome-rr-config.c:1696
+#, c-format
+msgid "could not find a suitable configuration of screens"
+msgstr "не могу да нађем одговарајућа подешавања за екране"
+
+#. Keep this string in sync with gnome-control-center/capplets/display/xrandr-capplet.c:get_display_name()
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#.
+#: ../libgnome-desktop/gnome-rr-labeler.c:210
+msgid "Mirror Screens"
+msgstr "Клонирани екрани"
+
+#~ msgid "Directory"
+#~ msgstr "Директоријум"
+
+#~ msgid "Application"
+#~ msgstr "Програм"
+
+#~ msgid "Link"
+#~ msgstr "Веза"
+
+# СД = Систем Датотека
+#~ msgid "FSDevice"
+#~ msgstr "СДУређај"
+
+#~ msgid "MIME Type"
+#~ msgstr "МИМЕ врста"
+
+#~ msgid "Service"
+#~ msgstr "Услуга"
+
+#~ msgid "ServiceType"
+#~ msgstr "ВрстаУслуге"
+
+#~ msgid "_URL:"
+#~ msgstr "_Адреса:"
+
+#~ msgid "Comm_and:"
+#~ msgstr "Н_аредба:"
+
+#~ msgid "_Name:"
+#~ msgstr "_Име:"
+
+#~ msgid "_Generic name:"
+#~ msgstr "_Основно име:"
+
+#~ msgid "Co_mment:"
+#~ msgstr "При_медба:"
+
+#~ msgid "Browse"
+#~ msgstr "Разгледај"
+
+#~ msgid "_Type:"
+#~ msgstr "Врс_та:"
+
+#~ msgid "_Icon:"
+#~ msgstr "_Иконa:"
+
+#~ msgid "Browse icons"
+#~ msgstr "Разгледај иконе"
+
+#~ msgid "Run in t_erminal"
+#~ msgstr "Покрени у т_ерминалу"
+
+#~ msgid "Language"
+#~ msgstr "Језик"
+
+#~ msgid "Name"
+#~ msgstr "Име"
+
+#~ msgid "Generic name"
+#~ msgstr "Основно име"
+
+#~ msgid "Comment"
+#~ msgstr "Примедба"
+
+#~ msgid "_Try this before using:"
+#~ msgstr "Покушај ово пре упо_требе:"
+
+#~ msgid "_Documentation:"
+#~ msgstr "_Упутства:"
+
+#~ msgid "_Name/Comment translations:"
+#~ msgstr "Преводи име_на и примедбе:"
+
+#~ msgid "_Add/Set"
+#~ msgstr "Дод_ај/постави"
+
+#~ msgid "Add or Set Name/Comment Translations"
+#~ msgstr "Додај или постави преводе имена и примедбе"
+
+#~ msgid "Re_move"
+#~ msgstr "_Уклони"
+
+#~ msgid "Remove Name/Comment Translation"
+#~ msgstr "Уклони превод имена и примедбе"
+
+#~ msgid "Basic"
+#~ msgstr "Основно"
+
+#~ msgid "Advanced"
+#~ msgstr "Напредно"
+
+#~ msgid "_Show Hints at Startup"
+#~ msgstr "Прикажи _савете при покретању"
+
+#~ msgid "Could not locate the directory with header images."
+#~ msgstr "Не могу да пронађем директоријум са сликама за заглавље."
+
+#~ msgid "Failed to open directory with header images: %s"
+#~ msgstr "Нисам успео да приступим директоријуму са сликама за заглавље: %s"
+
+#~ msgid "Unable to load header image: %s"
+#~ msgstr "Не могу да учитам слику за заглавље: %s"
+
+#~ msgid "Could not locate the GNOME logo."
+#~ msgstr "Не могу да пронађем логотип Гнома."
+
+#~ msgid "Unable to load '%s': %s"
+#~ msgstr "Не могу да учитам „%s“: %s"
+
+#~ msgid "Could not open the address \"%s\": %s"
+#~ msgstr "Не могу да приступим адреси „%s“: %s"
+
+#~ msgid "%s: %s\n"
+#~ msgstr "%s: %s\n"
+
+#~ msgid "%s: "
+#~ msgstr "%s: "
+
+#~ msgid "Software"
+#~ msgstr "Софтвер"
+
+#~ msgid "Developers"
+#~ msgstr "Програмери"
+
+#~ msgid "Error writing file '%s': %s"
+#~ msgstr "Грешка при писању датотеке „%s“: %s"
+
+#~ msgid "The End!"
+#~ msgstr "Крај!"
+
+#~ msgid "Accessories"
+#~ msgstr "Алатке"
+
+#~ msgid "Accessories menu"
+#~ msgstr "Мени са алаткама"
+
+#~ msgid "Applications"
+#~ msgstr "Програми"
+
+#~ msgid "Programming"
+#~ msgstr "Програмирање"
+
+#~ msgid "Tools for software development"
+#~ msgstr "Алати за развој софтвера"
+
+#~ msgid "Games"
+#~ msgstr "Игре"
+
+#~ msgid "Games menu"
+#~ msgstr "Мени за игрице"
+
+#~ msgid "Graphics"
+#~ msgstr "Графика"
+
+#~ msgid "Graphics menu"
+#~ msgstr "Мени за графичке програме"
+
+#~ msgid "Internet"
+#~ msgstr "Интернет"
+
+#~ msgid "Programs for Internet and networks"
+#~ msgstr "Програми за Интернет и мреже"
+
+#~ msgid "Multimedia"
+#~ msgstr "Мултимедија"
+
+#~ msgid "Multimedia menu"
+#~ msgstr "Мени за мултимедију"
+
+#~ msgid "Office"
+#~ msgstr "Канцеларија"
+
+#~ msgid "Office Applications"
+#~ msgstr "Програми за канцеларију"
+
+#~ msgid "Applications without a category"
+#~ msgstr "Програми без одређене категорије"
+
+#~ msgid "Other"
+#~ msgstr "Остало"
+
+#~ msgid "Programs"
+#~ msgstr "Програми"
+
+#~ msgid "Programs menu"
+#~ msgstr "Мени за програме"
+
+#~ msgid "Desktop Preferences"
+#~ msgstr "Поставкe окружења"
+
+#~ msgid "Preferences that affect the whole GNOME desktop"
+#~ msgstr "Поставке које утичу на цело радно окружење Гном"
+
+#~ msgid "System Tools"
+#~ msgstr "Системски алати"
+
+#~ msgid "System menu"
+#~ msgstr "Системски мени"
+
+#~ msgid ""
+#~ "GNOME is developed by an active community of volunteers who want to "
+#~ "provide a desktop and a suite of user friendly applications. Because "
+#~ "GNOME needs documentors, translators, and many other types of people, "
+#~ "virtually anyone, with or without coding skills, can contribute to GNOME."
+#~ msgstr ""
+#~ "Гнома развија активна заједница добровољаца који желе да направе радно "
+#~ "окружење и скуп програма лаких за употребу. Како Гному увек треба допуна "
+#~ "документације, превода, и још много шта, готово свако, са или без "
+#~ "програмерског умећа, може да допринесе Гному."
+
+#~ msgid "Download"
+#~ msgstr "Преузми"
+
+#~ msgid "Users"
+#~ msgstr "Корисници"
+
+#~ msgid "Foundation"
+#~ msgstr "Задужбина"

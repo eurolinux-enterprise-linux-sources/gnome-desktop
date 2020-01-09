@@ -1,0 +1,224 @@
+<!-- ##### SECTION Title ##### -->
+GnomeBG
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT GnomeBG ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL GnomeBG::changed ##### -->
+<para>
+
+</para>
+
+@bg: the object which received the signal.
+
+<!-- ##### SIGNAL GnomeBG::transitioned ##### -->
+<para>
+
+</para>
+
+@bg: the object which received the signal.
+
+<!-- ##### ENUM GnomeBGColorType ##### -->
+<para>
+
+</para>
+
+@GNOME_BG_COLOR_SOLID: 
+@GNOME_BG_COLOR_H_GRADIENT: 
+@GNOME_BG_COLOR_V_GRADIENT: 
+
+<!-- ##### ENUM GnomeBGPlacement ##### -->
+<para>
+
+</para>
+
+@GNOME_BG_PLACEMENT_TILED: 
+@GNOME_BG_PLACEMENT_ZOOMED: 
+@GNOME_BG_PLACEMENT_CENTERED: 
+@GNOME_BG_PLACEMENT_SCALED: 
+@GNOME_BG_PLACEMENT_FILL_SCREEN: 
+
+<!-- ##### MACRO GNOME_BG_KEY_DIR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION gnome_bg_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_load_from_preferences ##### -->
+<para>
+
+</para>
+
+@bg: 
+@client: 
+
+
+<!-- ##### FUNCTION gnome_bg_save_to_preferences ##### -->
+<para>
+
+</para>
+
+@bg: 
+@client: 
+
+
+<!-- ##### FUNCTION gnome_bg_set_filename ##### -->
+<para>
+
+</para>
+
+@bg: 
+@filename: 
+
+
+<!-- ##### FUNCTION gnome_bg_set_placement ##### -->
+<para>
+
+</para>
+
+@bg: 
+@placement: 
+
+
+<!-- ##### FUNCTION gnome_bg_set_color ##### -->
+<para>
+
+</para>
+
+@bg: 
+@type: 
+@primary: 
+@secondary: 
+
+
+<!-- ##### FUNCTION gnome_bg_get_filename ##### -->
+<para>
+
+</para>
+
+@bg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_get_placement ##### -->
+<para>
+
+</para>
+
+@bg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_get_color ##### -->
+<para>
+
+</para>
+
+@bg: 
+@type: 
+@primary: 
+@secondary: 
+
+
+<!-- ##### FUNCTION gnome_bg_draw ##### -->
+<para>
+
+</para>
+
+@bg: 
+@dest: 
+
+
+<!-- ##### FUNCTION gnome_bg_create_pixmap ##### -->
+<para>
+
+</para>
+
+@bg: 
+@window: 
+@width: 
+@height: 
+@root: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_get_image_size ##### -->
+<para>
+
+</para>
+
+@bg: 
+@factory: 
+@width: 
+@height: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_create_thumbnail ##### -->
+<para>
+
+</para>
+
+@bg: 
+@factory: 
+@screen: 
+@dest_width: 
+@dest_height: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_is_dark ##### -->
+<para>
+
+</para>
+
+@bg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_changes_with_size ##### -->
+<para>
+
+</para>
+
+@bg: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gnome_bg_set_pixmap_as_root ##### -->
+<para>
+
+</para>
+
+@screen: 
+@pixmap: 
+
+

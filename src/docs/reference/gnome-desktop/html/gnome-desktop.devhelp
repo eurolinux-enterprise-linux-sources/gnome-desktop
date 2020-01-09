@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="GNOME Desktop Library Reference Manual" link="index.html" author="" name="gnome-desktop">
+  <chapters>
+    <sub name="GNOME Desktop Library Overview" link="intro.html"/>
+    <sub name="Desktop Background" link="background.html">
+      <sub name="GnomeBG" link="GnomeBG.html"/>
+    </sub>
+    <sub name="Monitor Configuration" link="randr.html">
+      <sub name="gnome-rr-screen" link="gnome-desktop-gnome-rr-screen.html"/>
+      <sub name="gnome-rr-output" link="gnome-desktop-gnome-rr-output.html"/>
+      <sub name="gnome-rr-crtc" link="gnome-desktop-gnome-rr-crtc.html"/>
+      <sub name="gnome-rr-mode" link="gnome-desktop-gnome-rr-mode.html"/>
+      <sub name="gnome-rr-config" link="gnome-desktop-gnome-rr-config.html"/>
+      <sub name="GnomeRRLabeler" link="GnomeRRLabeler.html"/>
+    </sub>
+    <sub name="Thumbnails" link="thumbnail.html">
+      <sub name="GnomeDesktopThumbnailFactory" link="GnomeDesktopThumbnailFactory.html"/>
+      <sub name="Miscellaneous Thumbnail Functions" link="gnome-desktop-Miscellaneous-Thumbnail-Functions.html"/>
+    </sub>
+    <sub name="Miscellaneous" link="libgnome.html">
+      <sub name="GnomeDesktopItem" link="gnome-desktop-GnomeDesktopItem.html"/>
+      <sub name="Miscellaneous Functions" link="gnome-desktop-Miscellaneous-Functions.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <function name="GnomeBG" link="GnomeBG.html#GnomeBG-struct"/>
+    <function name="enum GnomeBGColorType" link="GnomeBG.html#GnomeBGColorType"/>
+    <function name="enum GnomeBGPlacement" link="GnomeBG.html#GnomeBGPlacement"/>
+    <function name="GNOME_BG_KEY_DIR" link="GnomeBG.html#GNOME-BG-KEY-DIR:CAPS"/>
+    <function name="gnome_bg_new ()" link="GnomeBG.html#gnome-bg-new"/>
+    <function name="gnome_bg_load_from_preferences ()" link="GnomeBG.html#gnome-bg-load-from-preferences"/>
+    <function name="gnome_bg_save_to_preferences ()" link="GnomeBG.html#gnome-bg-save-to-preferences"/>
+    <function name="gnome_bg_set_filename ()" link="GnomeBG.html#gnome-bg-set-filename"/>
+    <function name="gnome_bg_set_placement ()" link="GnomeBG.html#gnome-bg-set-placement"/>
+    <function name="gnome_bg_set_color ()" link="GnomeBG.html#gnome-bg-set-color"/>
+    <function name="gnome_bg_get_filename ()" link="GnomeBG.html#gnome-bg-get-filename"/>
+    <function name="gnome_bg_get_placement ()" link="GnomeBG.html#gnome-bg-get-placement"/>
+    <function name="gnome_bg_get_color ()" link="GnomeBG.html#gnome-bg-get-color"/>
+    <function name="gnome_bg_draw ()" link="GnomeBG.html#gnome-bg-draw"/>
+    <function name="gnome_bg_create_pixmap ()" link="GnomeBG.html#gnome-bg-create-pixmap"/>
+    <function name="gnome_bg_get_image_size ()" link="GnomeBG.html#gnome-bg-get-image-size"/>
+    <function name="gnome_bg_create_thumbnail ()" link="GnomeBG.html#gnome-bg-create-thumbnail"/>
+    <function name="gnome_bg_is_dark ()" link="GnomeBG.html#gnome-bg-is-dark"/>
+    <function name="gnome_bg_changes_with_size ()" link="GnomeBG.html#gnome-bg-changes-with-size"/>
+    <function name="gnome_bg_set_pixmap_as_root ()" link="GnomeBG.html#gnome-bg-set-pixmap-as-root"/>
+    <function name="The &quot;changed&quot; signal" link="GnomeBG.html#GnomeBG-changed"/>
+    <function name="The &quot;transitioned&quot; signal" link="GnomeBG.html#GnomeBG-transitioned"/>
+    <function name="GnomeRRScreen" link="gnome-desktop-gnome-rr-screen.html#GnomeRRScreen"/>
+    <function name="GnomeRRScreenChanged ()" link="gnome-desktop-gnome-rr-screen.html#GnomeRRScreenChanged"/>
+    <function name="gnome_rr_screen_new ()" link="gnome-desktop-gnome-rr-screen.html#gnome-rr-screen-new"/>
+    <function name="gnome_rr_screen_destroy ()" link="gnome-desktop-gnome-rr-screen.html#gnome-rr-screen-destroy"/>
+    <function name="gnome_rr_screen_refresh ()" link="gnome-desktop-gnome-rr-screen.html#gnome-rr-screen-refresh"/>
+    <function name="gnome_rr_screen_list_outputs ()" link="gnome-desktop-gnome-rr-screen.html#gnome-rr-screen-list-outputs"/>
+    <function name="gnome_rr_screen_list_crtcs ()" link="gnome-desktop-gnome-rr-screen.html#gnome-rr-screen-list-crtcs"/>
+    <function name="gnome_rr_screen_list_modes ()" link="gnome-desktop-gnome-rr-screen.html#gnome-rr-screen-list-modes"/>
+    <function name="gnome_rr_screen_list_clone_modes ()" link="gnome-desktop-gnome-rr-screen.html#gnome-rr-screen-list-clone-modes"/>
+    <function name="gnome_rr_screen_set_size ()" link="gnome-desktop-gnome-rr-screen.html#gnome-rr-screen-set-size"/>
+    <function name="gnome_rr_screen_get_output_by_id ()" link="gnome-desktop-gnome-rr-screen.html#gnome-rr-screen-get-output-by-id"/>
+    <function name="gnome_rr_screen_get_output_by_name ()" link="gnome-desktop-gnome-rr-screen.html#gnome-rr-screen-get-output-by-name"/>
+    <function name="gnome_rr_screen_get_crtc_by_id ()" link="gnome-desktop-gnome-rr-screen.html#gnome-rr-screen-get-crtc-by-id"/>
+    <function name="gnome_rr_screen_get_ranges ()" link="gnome-desktop-gnome-rr-screen.html#gnome-rr-screen-get-ranges"/>
+    <function name="GnomeRROutput" link="gnome-desktop-gnome-rr-output.html#GnomeRROutput"/>
+    <function name="gnome_rr_output_get_id ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-get-id"/>
+    <function name="gnome_rr_output_get_name ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-get-name"/>
+    <function name="gnome_rr_output_is_connected ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-is-connected"/>
+    <function name="gnome_rr_output_get_size_inches ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-get-size-inches"/>
+    <function name="gnome_rr_output_get_width_mm ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-get-width-mm"/>
+    <function name="gnome_rr_output_get_height_mm ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-get-height-mm"/>
+    <function name="gnome_rr_output_get_edid_data ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-get-edid-data"/>
+    <function name="gnome_rr_output_get_possible_crtcs ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-get-possible-crtcs"/>
+    <function name="gnome_rr_output_list_modes ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-list-modes"/>
+    <function name="gnome_rr_output_get_current_mode ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-get-current-mode"/>
+    <function name="gnome_rr_output_get_preferred_mode ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-get-preferred-mode"/>
+    <function name="gnome_rr_output_supports_mode ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-supports-mode"/>
+    <function name="gnome_rr_output_get_crtc ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-get-crtc"/>
+    <function name="gnome_rr_output_get_position ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-get-position"/>
+    <function name="gnome_rr_output_can_clone ()" link="gnome-desktop-gnome-rr-output.html#gnome-rr-output-can-clone"/>
+    <function name="GnomeRRCrtc" link="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc"/>
+    <function name="enum GnomeRRRotation" link="gnome-desktop-gnome-rr-crtc.html#GnomeRRRotation"/>
+    <function name="gnome_rr_crtc_get_id ()" link="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-get-id"/>
+    <function name="gnome_rr_crtc_set_config ()" link="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-set-config"/>
+    <function name="gnome_rr_crtc_can_drive_output ()" link="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-can-drive-output"/>
+    <function name="gnome_rr_crtc_get_current_mode ()" link="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-get-current-mode"/>
+    <function name="gnome_rr_crtc_get_position ()" link="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-get-position"/>
+    <function name="gnome_rr_crtc_supports_rotation ()" link="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-supports-rotation"/>
+    <function name="gnome_rr_crtc_get_current_rotation ()" link="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-get-current-rotation"/>
+    <function name="gnome_rr_crtc_get_rotations ()" link="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-get-rotations"/>
+    <function name="GnomeRRMode" link="gnome-desktop-gnome-rr-mode.html#GnomeRRMode"/>
+    <function name="gnome_rr_mode_get_id ()" link="gnome-desktop-gnome-rr-mode.html#gnome-rr-mode-get-id"/>
+    <function name="gnome_rr_mode_get_width ()" link="gnome-desktop-gnome-rr-mode.html#gnome-rr-mode-get-width"/>
+    <function name="gnome_rr_mode_get_height ()" link="gnome-desktop-gnome-rr-mode.html#gnome-rr-mode-get-height"/>
+    <function name="gnome_rr_mode_get_freq ()" link="gnome-desktop-gnome-rr-mode.html#gnome-rr-mode-get-freq"/>
+    <function name="GnomeOutputInfo" link="gnome-desktop-gnome-rr-config.html#GnomeOutputInfo"/>
+    <function name="GnomeRRConfig" link="gnome-desktop-gnome-rr-config.html#GnomeRRConfig"/>
+    <function name="gnome_rr_config_new_current ()" link="gnome-desktop-gnome-rr-config.html#gnome-rr-config-new-current"/>
+    <function name="gnome_rr_config_new_stored ()" link="gnome-desktop-gnome-rr-config.html#gnome-rr-config-new-stored"/>
+    <function name="gnome_rr_config_free ()" link="gnome-desktop-gnome-rr-config.html#gnome-rr-config-free"/>
+    <function name="gnome_rr_config_match ()" link="gnome-desktop-gnome-rr-config.html#gnome-rr-config-match"/>
+    <function name="gnome_rr_config_equal ()" link="gnome-desktop-gnome-rr-config.html#gnome-rr-config-equal"/>
+    <function name="gnome_rr_config_save ()" link="gnome-desktop-gnome-rr-config.html#gnome-rr-config-save"/>
+    <function name="gnome_rr_config_sanitize ()" link="gnome-desktop-gnome-rr-config.html#gnome-rr-config-sanitize"/>
+    <function name="gnome_rr_config_apply ()" link="gnome-desktop-gnome-rr-config.html#gnome-rr-config-apply"/>
+    <function name="gnome_rr_config_apply_stored ()" link="gnome-desktop-gnome-rr-config.html#gnome-rr-config-apply-stored"/>
+    <function name="gnome_rr_config_applicable ()" link="gnome-desktop-gnome-rr-config.html#gnome-rr-config-applicable"/>
+    <function name="GnomeRRLabeler" link="GnomeRRLabeler.html#GnomeRRLabeler-struct"/>
+    <function name="gnome_rr_labeler_new ()" link="GnomeRRLabeler.html#gnome-rr-labeler-new"/>
+    <function name="gnome_rr_labeler_hide ()" link="GnomeRRLabeler.html#gnome-rr-labeler-hide"/>
+    <function name="gnome_rr_labeler_get_color_for_output ()" link="GnomeRRLabeler.html#gnome-rr-labeler-get-color-for-output"/>
+    <function name="GnomeDesktopThumbnailFactory" link="GnomeDesktopThumbnailFactory.html#GnomeDesktopThumbnailFactory-struct"/>
+    <function name="enum GnomeDesktopThumbnailSize" link="GnomeDesktopThumbnailFactory.html#GnomeDesktopThumbnailSize"/>
+    <function name="gnome_desktop_thumbnail_factory_new ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-factory-new"/>
+    <function name="gnome_desktop_thumbnail_factory_lookup ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-factory-lookup"/>
+    <function name="gnome_desktop_thumbnail_factory_has_valid_failed_thumbnail ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-factory-has-valid-failed-thumbnail"/>
+    <function name="gnome_desktop_thumbnail_factory_can_thumbnail ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-factory-can-thumbnail"/>
+    <function name="gnome_desktop_thumbnail_factory_generate_thumbnail ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-factory-generate-thumbnail"/>
+    <function name="gnome_desktop_thumbnail_factory_save_thumbnail ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-factory-save-thumbnail"/>
+    <function name="gnome_desktop_thumbnail_factory_create_failed_thumbnail ()" link="GnomeDesktopThumbnailFactory.html#gnome-desktop-thumbnail-factory-create-failed-thumbnail"/>
+    <function name="gnome_desktop_thumbnail_has_uri ()" link="gnome-desktop-Miscellaneous-Thumbnail-Functions.html#gnome-desktop-thumbnail-has-uri"/>
+    <function name="gnome_desktop_thumbnail_is_valid ()" link="gnome-desktop-Miscellaneous-Thumbnail-Functions.html#gnome-desktop-thumbnail-is-valid"/>
+    <function name="gnome_desktop_thumbnail_md5 ()" link="gnome-desktop-Miscellaneous-Thumbnail-Functions.html#gnome-desktop-thumbnail-md5"/>
+    <function name="gnome_desktop_thumbnail_path_for_uri ()" link="gnome-desktop-Miscellaneous-Thumbnail-Functions.html#gnome-desktop-thumbnail-path-for-uri"/>
+    <function name="gnome_desktop_thumbnail_scale_down_pixbuf ()" link="gnome-desktop-Miscellaneous-Thumbnail-Functions.html#gnome-desktop-thumbnail-scale-down-pixbuf"/>
+    <function name="enum GnomeDesktopItemType" link="gnome-desktop-GnomeDesktopItem.html#GnomeDesktopItemType"/>
+    <function name="enum GnomeDesktopItemStatus" link="gnome-desktop-GnomeDesktopItem.html#GnomeDesktopItemStatus"/>
+    <function name="GnomeDesktopItem" link="gnome-desktop-GnomeDesktopItem.html#GnomeDesktopItem"/>
+    <function name="GNOME_DESKTOP_ITEM_ENCODING" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-ENCODING:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_VERSION" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-VERSION:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_NAME" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-NAME:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_GENERIC_NAME" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-GENERIC-NAME:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_TYPE" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-TYPE:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_FILE_PATTERN" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-FILE-PATTERN:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_TRY_EXEC" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-TRY-EXEC:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_NO_DISPLAY" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-NO-DISPLAY:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_COMMENT" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-COMMENT:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_EXEC" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-EXEC:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_ACTIONS" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-ACTIONS:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_ICON" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-ICON:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_MINI_ICON" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-MINI-ICON:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_HIDDEN" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-HIDDEN:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_PATH" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-PATH:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_TERMINAL" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-TERMINAL:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_TERMINAL_OPTIONS" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-TERMINAL-OPTIONS:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_SWALLOW_TITLE" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-SWALLOW-TITLE:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_SWALLOW_EXEC" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-SWALLOW-EXEC:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_MIME_TYPE" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-MIME-TYPE:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_PATTERNS" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-PATTERNS:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_DEFAULT_APP" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-DEFAULT-APP:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_DEV" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-DEV:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_FS_TYPE" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-FS-TYPE:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_MOUNT_POINT" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-MOUNT-POINT:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_READ_ONLY" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-READ-ONLY:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_UNMOUNT_ICON" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-UNMOUNT-ICON:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_SORT_ORDER" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-SORT-ORDER:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_URL" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-URL:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_DOC_PATH" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-DOC-PATH:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_CATEGORIES" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-CATEGORIES:CAPS"/>
+    <function name="GNOME_DESKTOP_ITEM_ONLY_SHOW_IN" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-ONLY-SHOW-IN:CAPS"/>
+    <function name="enum GnomeDesktopItemLoadFlags" link="gnome-desktop-GnomeDesktopItem.html#GnomeDesktopItemLoadFlags"/>
+    <function name="enum GnomeDesktopItemLaunchFlags" link="gnome-desktop-GnomeDesktopItem.html#GnomeDesktopItemLaunchFlags"/>
+    <function name="enum GnomeDesktopItemIconFlags" link="gnome-desktop-GnomeDesktopItem.html#GnomeDesktopItemIconFlags"/>
+    <function name="enum GnomeDesktopItemError" link="gnome-desktop-GnomeDesktopItem.html#GnomeDesktopItemError"/>
+    <function name="GNOME_DESKTOP_ITEM_ERROR" link="gnome-desktop-GnomeDesktopItem.html#GNOME-DESKTOP-ITEM-ERROR:CAPS"/>
+    <function name="gnome_desktop_item_new ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-new"/>
+    <function name="gnome_desktop_item_new_from_file ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-new-from-file"/>
+    <function name="gnome_desktop_item_new_from_uri ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-new-from-uri"/>
+    <function name="gnome_desktop_item_new_from_string ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-new-from-string"/>
+    <function name="gnome_desktop_item_new_from_basename ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-new-from-basename"/>
+    <function name="gnome_desktop_item_copy ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-copy"/>
+    <function name="gnome_desktop_item_save ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-save"/>
+    <function name="gnome_desktop_item_ref ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-ref"/>
+    <function name="gnome_desktop_item_unref ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-unref"/>
+    <function name="gnome_desktop_item_launch ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-launch"/>
+    <function name="gnome_desktop_item_launch_with_env ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-launch-with-env"/>
+    <function name="gnome_desktop_item_launch_on_screen ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-launch-on-screen"/>
+    <function name="gnome_desktop_item_drop_uri_list ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-drop-uri-list"/>
+    <function name="gnome_desktop_item_drop_uri_list_with_env ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-drop-uri-list-with-env"/>
+    <function name="gnome_desktop_item_exists ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-exists"/>
+    <function name="gnome_desktop_item_get_entry_type ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-get-entry-type"/>
+    <function name="gnome_desktop_item_set_entry_type ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-set-entry-type"/>
+    <function name="gnome_desktop_item_get_location ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-get-location"/>
+    <function name="gnome_desktop_item_set_location ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-set-location"/>
+    <function name="gnome_desktop_item_set_location_file ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-set-location-file"/>
+    <function name="gnome_desktop_item_get_file_status ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-get-file-status"/>
+    <function name="gnome_desktop_item_get_icon ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-get-icon"/>
+    <function name="gnome_desktop_item_find_icon ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-find-icon"/>
+    <function name="gnome_desktop_item_attr_exists ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-attr-exists"/>
+    <function name="gnome_desktop_item_get_string ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-get-string"/>
+    <function name="gnome_desktop_item_set_string ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-set-string"/>
+    <function name="gnome_desktop_item_get_attr_locale ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-get-attr-locale"/>
+    <function name="gnome_desktop_item_get_localestring ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-get-localestring"/>
+    <function name="gnome_desktop_item_get_localestring_lang ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-get-localestring-lang"/>
+    <function name="gnome_desktop_item_get_languages ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-get-languages"/>
+    <function name="gnome_desktop_item_set_localestring ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-set-localestring"/>
+    <function name="gnome_desktop_item_set_localestring_lang ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-set-localestring-lang"/>
+    <function name="gnome_desktop_item_clear_localestring ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-clear-localestring"/>
+    <function name="gnome_desktop_item_get_strings ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-get-strings"/>
+    <function name="gnome_desktop_item_set_strings ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-set-strings"/>
+    <function name="gnome_desktop_item_get_boolean ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-get-boolean"/>
+    <function name="gnome_desktop_item_set_boolean ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-set-boolean"/>
+    <function name="gnome_desktop_item_set_launch_time ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-set-launch-time"/>
+    <function name="gnome_desktop_item_clear_attr()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-clear-attr"/>
+    <function name="gnome_desktop_item_clear_section ()" link="gnome-desktop-GnomeDesktopItem.html#gnome-desktop-item-clear-section"/>
+    <function name="gnome_desktop_prepend_terminal_to_vector ()" link="gnome-desktop-Miscellaneous-Functions.html#gnome-desktop-prepend-terminal-to-vector"/>
+  </functions>
+</book>

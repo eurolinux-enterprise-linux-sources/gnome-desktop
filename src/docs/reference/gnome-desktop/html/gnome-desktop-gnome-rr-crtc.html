@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gnome-rr-crtc</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<link rel="home" href="index.html" title="GNOME Desktop Library Reference Manual">
+<link rel="up" href="randr.html" title="Part III. Monitor Configuration">
+<link rel="prev" href="gnome-desktop-gnome-rr-output.html" title="gnome-rr-output">
+<link rel="next" href="gnome-desktop-gnome-rr-mode.html" title="gnome-rr-mode">
+<meta name="generator" content="GTK-Doc V1.12 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="part" href="intro.html" title="Part I. GNOME Desktop Library Overview">
+<link rel="part" href="background.html" title="Part II. Desktop Background">
+<link rel="part" href="randr.html" title="Part III. Monitor Configuration">
+<link rel="part" href="thumbnail.html" title="Part IV. Thumbnails">
+<link rel="part" href="libgnome.html" title="Part V. Miscellaneous">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="gnome-desktop-gnome-rr-output.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="randr.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">GNOME Desktop Library Reference Manual</th>
+<td><a accesskey="n" href="gnome-desktop-gnome-rr-mode.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#gnome-desktop-gnome-rr-crtc.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#gnome-desktop-gnome-rr-crtc.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry" title="gnome-rr-crtc">
+<a name="gnome-desktop-gnome-rr-crtc"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-desktop-gnome-rr-crtc.top_of_page"></a>gnome-rr-crtc</span></h2>
+<p>gnome-rr-crtc</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="gnome-desktop-gnome-rr-crtc.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;libgnomeui/gnome-rr.h&gt;
+
+typedef             <a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc">GnomeRRCrtc</a>;
+enum                <a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRRotation" title="enum GnomeRRRotation">GnomeRRRotation</a>;
+<span class="returnvalue">guint32</span>             <a class="link" href="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-get-id" title="gnome_rr_crtc_get_id ()">gnome_rr_crtc_get_id</a>                (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-set-config" title="gnome_rr_crtc_set_config ()">gnome_rr_crtc_set_config</a>            (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc,
+                                                         <span class="returnvalue">int</span> x,
+                                                         <span class="returnvalue">int</span> y,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-mode.html#GnomeRRMode" title="GnomeRRMode"><span class="returnvalue">GnomeRRMode</span></a> *mode,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRRotation" title="enum GnomeRRRotation"><span class="returnvalue">GnomeRRRotation</span></a> rotation,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-output.html#GnomeRROutput" title="GnomeRROutput"><span class="returnvalue">GnomeRROutput</span></a> **outputs,
+                                                         <span class="returnvalue">int</span> n_outputs,
+                                                         <span class="returnvalue">GError</span> **error);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-can-drive-output" title="gnome_rr_crtc_can_drive_output ()">gnome_rr_crtc_can_drive_output</a>      (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-output.html#GnomeRROutput" title="GnomeRROutput"><span class="returnvalue">GnomeRROutput</span></a> *output);
+<a class="link" href="gnome-desktop-gnome-rr-mode.html#GnomeRRMode" title="GnomeRRMode"><span class="returnvalue">GnomeRRMode</span></a> *       <a class="link" href="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-get-current-mode" title="gnome_rr_crtc_get_current_mode ()">gnome_rr_crtc_get_current_mode</a>      (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc);
+<span class="returnvalue">void</span>                <a class="link" href="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-get-position" title="gnome_rr_crtc_get_position ()">gnome_rr_crtc_get_position</a>          (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc,
+                                                         <span class="returnvalue">int</span> *x,
+                                                         <span class="returnvalue">int</span> *y);
+<span class="returnvalue">gboolean</span>            <a class="link" href="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-supports-rotation" title="gnome_rr_crtc_supports_rotation ()">gnome_rr_crtc_supports_rotation</a>     (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRRotation" title="enum GnomeRRRotation"><span class="returnvalue">GnomeRRRotation</span></a> rotation);
+<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRRotation" title="enum GnomeRRRotation"><span class="returnvalue">GnomeRRRotation</span></a>     <a class="link" href="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-get-current-rotation" title="gnome_rr_crtc_get_current_rotation ()">gnome_rr_crtc_get_current_rotation</a>  (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc);
+<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRRotation" title="enum GnomeRRRotation"><span class="returnvalue">GnomeRRRotation</span></a>     <a class="link" href="gnome-desktop-gnome-rr-crtc.html#gnome-rr-crtc-get-rotations" title="gnome_rr_crtc_get_rotations ()">gnome_rr_crtc_get_rotations</a>         (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc);
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="gnome-desktop-gnome-rr-crtc.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="gnome-desktop-gnome-rr-crtc.details"></a><h2>Details</h2>
+<div class="refsect2" title="GnomeRRCrtc">
+<a name="GnomeRRCrtc"></a><h3>GnomeRRCrtc</h3>
+<pre class="programlisting">typedef struct GnomeRRCrtc GnomeRRCrtc;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="enum GnomeRRRotation">
+<a name="GnomeRRRotation"></a><h3>enum GnomeRRRotation</h3>
+<pre class="programlisting">typedef enum
+{
+    GNOME_RR_ROTATION_0 = (1 &lt;&lt; 0),
+    GNOME_RR_ROTATION_90 = (1 &lt;&lt; 1),
+    GNOME_RR_ROTATION_180 = (1 &lt;&lt; 2),
+    GNOME_RR_ROTATION_270 = (1 &lt;&lt; 3),
+    GNOME_RR_REFLECT_X = (1 &lt;&lt; 4),
+    GNOME_RR_REFLECT_Y = (1 &lt;&lt; 5)
+} GnomeRRRotation;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_crtc_get_id ()">
+<a name="gnome-rr-crtc-get-id"></a><h3>gnome_rr_crtc_get_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint32</span>             gnome_rr_crtc_get_id                (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>crtc</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_crtc_set_config ()">
+<a name="gnome-rr-crtc-set-config"></a><h3>gnome_rr_crtc_set_config ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_crtc_set_config            (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc,
+                                                         <span class="returnvalue">int</span> x,
+                                                         <span class="returnvalue">int</span> y,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-mode.html#GnomeRRMode" title="GnomeRRMode"><span class="returnvalue">GnomeRRMode</span></a> *mode,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRRotation" title="enum GnomeRRRotation"><span class="returnvalue">GnomeRRRotation</span></a> rotation,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-output.html#GnomeRROutput" title="GnomeRROutput"><span class="returnvalue">GnomeRROutput</span></a> **outputs,
+                                                         <span class="returnvalue">int</span> n_outputs,
+                                                         <span class="returnvalue">GError</span> **error);</pre>
+<div class="warning" title="Warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">gnome_rr_crtc_set_config</code> is deprecated and should not be used in newly-written code.</p>
+</div>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>crtc</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>x</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>y</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mode</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>rotation</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>outputs</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>n_outputs</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_crtc_can_drive_output ()">
+<a name="gnome-rr-crtc-can-drive-output"></a><h3>gnome_rr_crtc_can_drive_output ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_crtc_can_drive_output      (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-output.html#GnomeRROutput" title="GnomeRROutput"><span class="returnvalue">GnomeRROutput</span></a> *output);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>crtc</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>output</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_crtc_get_current_mode ()">
+<a name="gnome-rr-crtc-get-current-mode"></a><h3>gnome_rr_crtc_get_current_mode ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-desktop-gnome-rr-mode.html#GnomeRRMode" title="GnomeRRMode"><span class="returnvalue">GnomeRRMode</span></a> *       gnome_rr_crtc_get_current_mode      (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>crtc</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_crtc_get_position ()">
+<a name="gnome-rr-crtc-get-position"></a><h3>gnome_rr_crtc_get_position ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                gnome_rr_crtc_get_position          (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc,
+                                                         <span class="returnvalue">int</span> *x,
+                                                         <span class="returnvalue">int</span> *y);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>crtc</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>x</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>y</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_crtc_supports_rotation ()">
+<a name="gnome-rr-crtc-supports-rotation"></a><h3>gnome_rr_crtc_supports_rotation ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gnome_rr_crtc_supports_rotation     (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc,
+                                                         <a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRRotation" title="enum GnomeRRRotation"><span class="returnvalue">GnomeRRRotation</span></a> rotation);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>crtc</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>rotation</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_crtc_get_current_rotation ()">
+<a name="gnome-rr-crtc-get-current-rotation"></a><h3>gnome_rr_crtc_get_current_rotation ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRRotation" title="enum GnomeRRRotation"><span class="returnvalue">GnomeRRRotation</span></a>     gnome_rr_crtc_get_current_rotation  (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>crtc</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="gnome_rr_crtc_get_rotations ()">
+<a name="gnome-rr-crtc-get-rotations"></a><h3>gnome_rr_crtc_get_rotations ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRRotation" title="enum GnomeRRRotation"><span class="returnvalue">GnomeRRRotation</span></a>     gnome_rr_crtc_get_rotations         (<a class="link" href="gnome-desktop-gnome-rr-crtc.html#GnomeRRCrtc" title="GnomeRRCrtc"><span class="returnvalue">GnomeRRCrtc</span></a> *crtc);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>crtc</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.12</div>
+</body>
+</html>
