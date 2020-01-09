@@ -12,7 +12,7 @@
 Summary: Shared code among gnome-panel, gnome-session, nautilus, etc
 Name: gnome-desktop
 Version: 2.28.2
-Release: 9%{?dist}
+Release: 11%{?dist}
 URL: http://www.gnome.org
 Source0: http://download.gnome.org/sources/gnome-desktop/2.28/%{name}-%{version}.tar.bz2
 Patch1: concatenate-edid-descriptors.patch
@@ -41,6 +41,9 @@ Patch10: fix-detect-displays.patch
 # https://bugzilla.redhat.com//show_bug.cgi?id=639732
 # Nautilus is leaking memory
 Patch11: gnome-desktop-2.29.4-gnomebg-refcounting.patch
+
+# https://bugzilla.redhat.com/824757
+Patch12: fix-hotkey.patch
 
 License: GPLv2+ and LGPLv2+
 Group: System Environment/Libraries
@@ -110,6 +113,7 @@ libgnomedesktop.
 %patch9 -p1 -b .translations
 %patch10 -p1 -b .fix-detect-displays
 %patch11 -p1 -b .gnomebg-refcounting
+%patch12 -p1 -b .fix-hotkey
 
 %build
 %configure --with-gnome-distributor="Red Hat, Inc" \
@@ -157,6 +161,14 @@ rm -rf $RPM_BUILD_ROOT
 %doc %{_datadir}/gtk-doc/html/gnome-desktop/
 
 %changelog
+* Wed Sep 26 2012 Ray Strode <rstrode@redhat.com> 2.28.2-11
+- Sync display after ungrabbing server
+  Related: #824757
+
+* Mon Sep 10 2012 Ray Strode <rstrode@redhat.com> 2.28.2-10
+- Be more restrictive about what width/height combinations to accept
+  Resolves: #824757
+
 * Thu Feb 02 2012 Tomas Bzatek <tbzatek@redhat.com> 2.28.2-9
 - Fix memory leak in GnomeBg drawing (#639732)
 

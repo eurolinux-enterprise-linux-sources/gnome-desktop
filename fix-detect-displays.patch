@@ -61,11 +61,11 @@ diff -up gnome-desktop-2.28.2/libgnome-desktop/gnome-rr.c.fix-detect-displays gn
      g_return_val_if_fail (error == NULL || *error == NULL, FALSE);
 -    return screen_update (screen, FALSE, TRUE, error);
 +
-+
 +    XGrabServer (screen->xdisplay);
 +    refreshed = screen_update (screen, FALSE, TRUE, error);
 +    gnome_rr_screen_force_timestamp_update (screen);
 +    XUngrabServer (screen->xdisplay);
++    gdk_flush ();
 +
 +    return refreshed;
  }
